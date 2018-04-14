@@ -1,12 +1,26 @@
 <template>
     <div class="main">
-        Hello from main
+        <div v-if="id">this is article with ID: <span>{{id}}</span></div>
+        <div v-else>Hello from main</div>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'MainComponent'
+  name: 'MainComponent',
+  data () {
+    return {
+      id: '',
+      profile: {
+        name: '',
+        surname: ''
+      }
+    }
+  },
+  created () {
+    this.id = this.$route.params.addressId;
+    console.log(this.$route);
+  }
 }
 </script>
 

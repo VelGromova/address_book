@@ -1,12 +1,16 @@
 <template>
     <div class="sidebar">
-        Hello from sidebar
+        <button-component :title="'Add contact'"></button-component>
     </div>
 </template>
 
 <script>
+import ButtonComponent from './ui/ButtonComponent'
 export default {
-  name: 'SidebarComponent'
+  name: 'SidebarComponent',
+  components: {
+    ButtonComponent
+  }
 }
 </script>
 
