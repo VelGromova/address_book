@@ -20,6 +20,8 @@
 <style scoped>
     button {
         background-color: #6cc04a;
+        width: 100%;
+        color: #fff;
     }
 
 </style>
