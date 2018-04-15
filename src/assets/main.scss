@@ -6,7 +6,34 @@ html, body {
 
 #app {
   display: flex;
-  justify-content: space-between;
   background: #fff;
   height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.main {
+  width: 70%;
+}
+
+
+.contactHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media all and (max-width: 768px) {
+  #app {
+    flex-direction: column;
+  }
+  .sidebar, .main {
+    width: 100%;
+  }
+  .sidebar {
+    margin-bottom: 3rem;
+  }
 }

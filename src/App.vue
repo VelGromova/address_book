@@ -20,4 +20,5 @@ export default {
 
 <style lang="scss">
     @import 'assets/main.scss';
+    @import 'assets/mixin.scss';
 </style>
