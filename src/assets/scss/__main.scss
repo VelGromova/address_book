@@ -1,0 +1,164 @@
+.main {
+  padding-top: 30px;
+  position: relative;
+  height: calc(100% - 30px);
+
+  &__header {
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__save {
+    &__container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &__btn {
+      @extend .font-semibold;
+
+      font-size: 16px;
+      height: 40px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      background-color: $color-6cc04a;
+      color: $color-white;
+      text-decoration: none;
+      width: 100%;
+
+      &:hover {
+        background-color: $color-6caa64;
+      }
+    }
+  }
+
+  .contact {
+    &__photo {
+      margin-left: 60px;
+    }
+
+    &__fullname {
+      @extend .font-semibold;
+
+      color: $color-black;
+      font-size: 50px;
+      letter-spacing: 0.1rem;
+    }
+
+    &__action {
+      @include border-radius(50%);
+      @include transition($background-color-transition-function);
+
+      margin-right: 60px;
+      cursor: pointer;
+      padding: 10px;
+
+      &:hover {
+        background-color: $color-e6e6e6;
+
+        .icon-delete {
+          @extend .icon-delete-white;
+        }
+      }
+    }
+
+    &__field {
+      font-size: 20px;
+      margin: 10px 0 20px;
+      padding: 0;
+      letter-spacing: 0.1rem;
+
+      &--title {
+        @extend .font-semibold;
+
+        color: $color-5d6479;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        padding: 0;
+      }
+
+      &__new {
+        @include border-radius(5px);
+        @include transition($background-color-transition-function);
+
+        @extend .font-semibold;
+
+        background-color: white;
+        outline: none;
+        border: none;
+        color: $color-5d6479;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-e6e6e6;
+        }
+
+        span {
+          margin: 5px;
+        }
+      }
+    }
+
+    &__value {
+      @extend .font-semibold;
+
+      color: $color-black;
+    }
+
+    &__input {
+      @include transition($background-color-transition-function);
+      @include border-radius(5px);
+      @extend .font-regular;
+
+      border: 1px solid $color-b3b3b3;
+      color: $color-b3b3b3;
+      outline: none;
+      padding: 10px;
+      letter-spacing: 0.1rem;
+
+      &:hover, &:focus {
+        background-color: $color-e6e6e6;
+        color: $color-5d6479;
+      }
+    }
+
+    &__not__found {
+      @extend .font-semibold;
+      margin: 50px;
+      color: $color-5d6479;
+    }
+  }
+
+  .select__field {
+    @include transition($background-color-and-color-transition-function);
+
+    @extend .font-semibold;
+    @include border-radius(5px);
+
+    padding: 5px;
+    list-style-type: none;
+    color: $color-5d6479;
+    font-size: 24px;
+    margin: 10px;
+    border: 1px solid $color-5d6479;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-5d6479;
+      color: $color-e6e6e6;
+    }
+
+    &__container {
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+  }
+}

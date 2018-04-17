@@ -1,0 +1,22 @@
+// Importing whole kernel
+// * const values(like z-indexes gradation, grid consts, colors etc)
+// * mixins
+// * reseted some styles
+// * nested classes for effects, grid, etc
+// ----------------------
+@import "./kernel/all";
+
+// Adding fonts
+@import "./fonts/_fonts";
+
+// Adding sprites and icons classes + mixins to generate sprites
+@import "./icons/_sprite";
+@import "./icons/_icons";
+
+// Scrollbar styles
+@import "~vue2-scrollbar/dist/style/vue2-scrollbar.css";
+
+// Importing components styles
+@import "_app";
+@import "_sidebar";
+@import "_main";

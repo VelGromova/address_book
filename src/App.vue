@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
+  <div class="app__container eg-flex">
     <sidebar-component></sidebar-component>
-    <main-component></main-component>
+    <transition name="ef-opacity" mode="out-in">
+      <router-view :key="$route.path" class="eg-flex11 ef-transition-opacity"></router-view>
+    </transition>
+    <v-dialog/>
   </div>
 </template>
 
@@ -11,6 +14,7 @@ import MainComponent from './components/MainComponent.vue'
 
 export default {
   name: 'app',
+
   components: {
     SidebarComponent,
     MainComponent
@@ -19,6 +23,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import 'assets/main.scss';
-    @import 'assets/mixin.scss';
+@import 'assets/scss/all';
 </style>

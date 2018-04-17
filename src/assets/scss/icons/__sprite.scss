@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$avatar-edit-name: 'avatar-edit';
+$avatar-edit-x: 0px;
+$avatar-edit-y: 0px;
+$avatar-edit-offset-x: 0px;
+$avatar-edit-offset-y: 0px;
+$avatar-edit-width: 109px;
+$avatar-edit-height: 94px;
+$avatar-edit-total-width: 204px;
+$avatar-edit-total-height: 173px;
+$avatar-edit-image: './assets/images/sprite.png';
+$avatar-edit: (0px, 0px, 0px, 0px, 109px, 94px, 204px, 173px, './assets/images/sprite.png', 'avatar-edit', );
+$avatar-name: 'avatar';
+$avatar-x: 109px;
+$avatar-y: 0px;
+$avatar-offset-x: -109px;
+$avatar-offset-y: 0px;
+$avatar-width: 95px;
+$avatar-height: 94px;
+$avatar-total-width: 204px;
+$avatar-total-height: 173px;
+$avatar-image: './assets/images/sprite.png';
+$avatar: (109px, 0px, -109px, 0px, 95px, 94px, 204px, 173px, './assets/images/sprite.png', 'avatar', );
+$back-button-name: 'back-button';
+$back-button-x: 0px;
+$back-button-y: 94px;
+$back-button-offset-x: 0px;
+$back-button-offset-y: -94px;
+$back-button-width: 56px;
+$back-button-height: 56px;
+$back-button-total-width: 204px;
+$back-button-total-height: 173px;
+$back-button-image: './assets/images/sprite.png';
+$back-button: (0px, 94px, 0px, -94px, 56px, 56px, 204px, 173px, './assets/images/sprite.png', 'back-button', );
+$delete-white-name: 'delete-white';
+$delete-white-x: 56px;
+$delete-white-y: 94px;
+$delete-white-offset-x: -56px;
+$delete-white-offset-y: -94px;
+$delete-white-width: 45px;
+$delete-white-height: 44px;
+$delete-white-total-width: 204px;
+$delete-white-total-height: 173px;
+$delete-white-image: './assets/images/sprite.png';
+$delete-white: (56px, 94px, -56px, -94px, 45px, 44px, 204px, 173px, './assets/images/sprite.png', 'delete-white', );
+$delete-name: 'delete';
+$delete-x: 101px;
+$delete-y: 94px;
+$delete-offset-x: -101px;
+$delete-offset-y: -94px;
+$delete-width: 45px;
+$delete-height: 44px;
+$delete-total-width: 204px;
+$delete-total-height: 173px;
+$delete-image: './assets/images/sprite.png';
+$delete: (101px, 94px, -101px, -94px, 45px, 44px, 204px, 173px, './assets/images/sprite.png', 'delete', );
+$edit-name: 'edit';
+$edit-x: 146px;
+$edit-y: 94px;
+$edit-offset-x: -146px;
+$edit-offset-y: -94px;
+$edit-width: 45px;
+$edit-height: 44px;
+$edit-total-width: 204px;
+$edit-total-height: 173px;
+$edit-image: './assets/images/sprite.png';
+$edit: (146px, 94px, -146px, -94px, 45px, 44px, 204px, 173px, './assets/images/sprite.png', 'edit', );
+$plus-white-name: 'plus-white';
+$plus-white-x: 0px;
+$plus-white-y: 150px;
+$plus-white-offset-x: 0px;
+$plus-white-offset-y: -150px;
+$plus-white-width: 23px;
+$plus-white-height: 23px;
+$plus-white-total-width: 204px;
+$plus-white-total-height: 173px;
+$plus-white-image: './assets/images/sprite.png';
+$plus-white: (0px, 150px, 0px, -150px, 23px, 23px, 204px, 173px, './assets/images/sprite.png', 'plus-white', );
+$plus-name: 'plus';
+$plus-x: 23px;
+$plus-y: 150px;
+$plus-offset-x: -23px;
+$plus-offset-y: -150px;
+$plus-width: 23px;
+$plus-height: 23px;
+$plus-total-width: 204px;
+$plus-total-height: 173px;
+$plus-image: './assets/images/sprite.png';
+$plus: (23px, 150px, -23px, -150px, 23px, 23px, 204px, 173px, './assets/images/sprite.png', 'plus', );
+$search-name: 'search';
+$search-x: 46px;
+$search-y: 150px;
+$search-offset-x: -46px;
+$search-offset-y: -150px;
+$search-width: 21px;
+$search-height: 22px;
+$search-total-width: 204px;
+$search-total-height: 173px;
+$search-image: './assets/images/sprite.png';
+$search: (46px, 150px, -46px, -150px, 21px, 22px, 204px, 173px, './assets/images/sprite.png', 'search', );
+$spritesheet-width: 204px;
+$spritesheet-height: 173px;
+$spritesheet-image: './assets/images/sprite.png';
+$spritesheet-sprites: ($avatar-edit, $avatar, $back-button, $delete-white, $delete, $edit, $plus-white, $plus, $search, );
+$spritesheet: (204px, 173px, './assets/images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
